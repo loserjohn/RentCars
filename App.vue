@@ -1,10 +1,10 @@
 <script>
 	import SET from '@/SET.js';
 	import Utils from '@/common/utils.js';
-	// #ifdef H5	
-	const jweixin = require('jweixin-module');
-	import pageAnimation from './components/page-animation'
-	// #endif
+	// // #ifdef H5	
+	// const jweixin = require('jweixin-module');
+	// import pageAnimation from './components/page-animation'
+	// // #endif
 
 
 	import Vue from 'vue'
@@ -298,7 +298,9 @@
 		min-height: 100vh;
 		background-color: #f4f4f4;
 	}
-
+	view,text{
+		font-size: 26rpx;
+	}
 	.hover {
 		background-color: #f7f7f7;
 		transform: translate(-1rpx, -1rpx);
@@ -348,7 +350,7 @@
 	.cm_ellipsis {
 		text-overflow: ellipsis;
 		white-space: nowrap;
-
+		overflow: hidden;
 	}
 
 	.cm_ellipsis2 {

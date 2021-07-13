@@ -2,10 +2,11 @@
 	<view style="padding:0 30rpx;" @click="_nav">
 		<view class="u-flex carItems">
 			<image src="../static/images/fp_sm.png" class="pics" mode="aspectFill"></image>
-			<view class="f1">
-				<view class="title">萨法的啥的</view>
-				<view class="cm_text">是打发点啥的是</view>
-				<view class="u-flex priceBox">
+			<view class="f1 u-flex-y content" >
+				<view class="title cm_ellipsis2">萨法的啥的萨法的啥的萨法的啥的萨法的啥的萨法的啥的</view>
+				<view class="cm_text cm_ellipsis">是打发点啥的是是打发点啥的是是打发点啥的是</view>
+				<view class="f1"></view>
+				<view class="u-flex priceBox f1">
 					<text class="price">1.2万 </text>
 					<text style="color:#EE7F48 ;"> 首付1.2万</text>
 					<view class="f1"></view>
@@ -26,7 +27,7 @@
 		methods:{
 			_nav(){
 				uni.navigateTo({
-					url:'/pages/features/carDetail/carDetail'
+					url:'/pages/usedCars/carDetail/carDetail'
 				})
 			}
 		}
@@ -49,11 +50,13 @@
 
 		.title {
 			font-weight: 600;
-			line-height: 2;
-					font-size: 32rpx;
+			line-height: 1.2;
+			margin-bottom: 10rpx;
+			font-size: 32rpx;
+		 
 		}
 		.priceBox{
-			padding: 16rpx 0;
+			padding: 10rpx 0;
 			.price{
 				color: #EE7F48;
 				font-size: 32rpx;
@@ -63,8 +66,17 @@
 		}
 		.cm_title,.cm_time{
 			white-space: nowrap;
+			width: 100%;
 			text-overflow: ellipsis;
 			overflow: hidden;
+		}
+		.cm_text{
+			width: 100%;
+		}
+		.content{
+			width: 50%;
+			height: 184rpx;
+			align-items: flex-start;
 		}
 		
 	}

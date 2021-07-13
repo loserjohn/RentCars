@@ -1,7 +1,7 @@
 <template>
 	<view class="carItems" @click="_nav">
 		<view class="u-flex">
-			<image src="../../../components/PayPanel/xz.png" class="pics" mode="aspectFill"></image>
+			<image src="../static/img/dl_ck.png" class="pics" mode="aspectFill"></image>
 			<view class="f1">
 				<view class="title">萨法的啥的</view>
 				<view class="cm_text">是打发点啥的是</view>

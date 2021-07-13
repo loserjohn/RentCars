@@ -73,6 +73,13 @@
 					"enablePullDownRefresh": true
 				}
 
+			}, {
+				"path": "carDetail/carDetail",
+				"style": {
+					"navigationBarTitleText": "车源详情",
+					"enablePullDownRefresh": false
+				}
+
 			}]
 		}
 	],

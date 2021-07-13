@@ -1,125 +1,126 @@
 <template>
 	<view class="pages ">
-		<view class="header flex">
-			<view class="f1">
+		<view class="header ">
+			<view class=" block" style="padding:20rpx 20rpx 0 20rpx;">
 				<u-search circle placeholder="请输入想要找的商品、服务、保险" clearabled v-model="keyword"></u-search>
+			</view>
+			<view class="filterBox ">
+				<u-dropdown active-color="#EE7F48">
+					<u-dropdown-item v-model="value1" title="综合排序" :options="options"></u-dropdown-item>
+					<u-dropdown-item v-model="value2" title="车辆品牌" :options="options">
+						<view class="slot-content" style="background-color: #FFFFFF;">
+			
+							<scroll-view scroll-y="true" style="height: 748rpx;">
+								<view class="u-flex carBrandBar">
+									<view class=" carBrand u-flex">
+										<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
+										</image>
+										<view class="grid-text">我的行程</view>
+									</view>
+									<view class=" carBrand u-flex">
+										<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
+										</image>
+										<view class="grid-text">我的行程</view>
+									</view>
+									<view class=" carBrand u-flex">
+										<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
+										</image>
+										<view class="grid-text">我的行程</view>
+									</view>
+									<view class=" carBrand u-flex">
+										<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
+										</image>
+										<view class="grid-text">我的行程</view>
+									</view>
+									<view class=" carBrand u-flex">
+										<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
+										</image>
+										<view class="grid-text">我的行程</view>
+									</view>
+									<view class=" carBrand u-flex">
+										<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
+										</image>
+										<view class="grid-text">我的行程</view>
+									</view>
+									<view class=" carBrand u-flex">
+										<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
+										</image>
+										<view class="grid-text">我的行程</view>
+									</view>
+									<view class="f1"></view>
+								</view>
+							</scroll-view>
+							<view class="footer u-flex">
+								<view class="f1 btns">重置</view>
+								<!-- <u-button class="f1" type="primary" @click="closeDropdown">保存</u-button> -->
+								<view class="f1 btns sure" @click="closeDropdown">保存</view>
+							</view>
+						</view>
+					</u-dropdown-item>
+					<u-dropdown-item v-model="value1" title="价格" :options="options"></u-dropdown-item>
+					<u-dropdown-item v-model="value2" title="筛选" :options="options">
+						<view class="slot-content" style="background-color: #FFFFFF;">
+							<scroll-view scroll-y="true" style="height: 348rpx;">
+								<view class="filteritems">
+									<view class="cm_title">座位</view>
+									<view class="u-flex carBrandBar">
+										<view class=" carBrand u-flex">
+											<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
+											<view class="grid-text">我的行程</view>
+										</view>
+										<view class=" carBrand u-flex">
+											<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
+											<view class="grid-text">我的行程</view>
+										</view>
+										<view class=" carBrand u-flex">
+											<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
+											<view class="grid-text">我的行程</view>
+										</view>
+										<view class=" carBrand u-flex">
+											<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
+											<view class="grid-text">我的行程</view>
+										</view>
+										<view class="f1"></view>
+									</view>
+								</view>
+								<view class="filteritems">
+									<view class="cm_title">座位</view>
+									<view class="u-flex carBrandBar">
+										<view class=" carBrand u-flex">
+											<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
+											<view class="grid-text">我的行程</view>
+										</view>
+										<view class=" carBrand u-flex">
+											<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
+											<view class="grid-text">我的行程</view>
+										</view>
+										<view class=" carBrand u-flex">
+											<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
+											<view class="grid-text">我的行程</view>
+										</view>
+										<view class=" carBrand u-flex">
+											<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
+											<view class="grid-text">我的行程</view>
+										</view>
+										<view class="f1"></view>
+									</view>
+								</view>
+							</scroll-view>
+							<view class="footer">
+								共<text style="color: #EE7F48;">10</text>车型可选
+							</view>
+							<view class="footer u-flex">
+								<view class="f1 btns">重置</view>
+								<!-- <u-button class="f1" type="primary" @click="closeDropdown">保存</u-button> -->
+								<view class="f1 btns sure" @click="closeDropdown">保存</view>
+							</view>
+						</view>
+					</u-dropdown-item>
+				</u-dropdown>
 			</view>
 		</view>
 
-		<view class="filterBox ">
-			<u-dropdown active-color="#EE7F48">
-				<u-dropdown-item v-model="value1" title="综合排序" :options="options"></u-dropdown-item>
-				<u-dropdown-item v-model="value2" title="车辆品牌" :options="options">
-					<view class="slot-content" style="background-color: #FFFFFF;">
-
-						<scroll-view scroll-y="true" style="height: 748rpx;">
-							<view class="u-flex carBrandBar">
-								<view class=" carBrand u-flex">
-									<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
-									</image>
-									<view class="grid-text">我的行程</view>
-								</view>
-								<view class=" carBrand u-flex">
-									<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
-									</image>
-									<view class="grid-text">我的行程</view>
-								</view>
-								<view class=" carBrand u-flex">
-									<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
-									</image>
-									<view class="grid-text">我的行程</view>
-								</view>
-								<view class=" carBrand u-flex">
-									<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
-									</image>
-									<view class="grid-text">我的行程</view>
-								</view>
-								<view class=" carBrand u-flex">
-									<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
-									</image>
-									<view class="grid-text">我的行程</view>
-								</view>
-								<view class=" carBrand u-flex">
-									<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
-									</image>
-									<view class="grid-text">我的行程</view>
-								</view>
-								<view class=" carBrand u-flex">
-									<image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons">
-									</image>
-									<view class="grid-text">我的行程</view>
-								</view>
-								<view class="f1"></view>
-							</view>
-						</scroll-view>
-						<view class="footer u-flex">
-							<view class="f1 btns">重置</view>
-							<!-- <u-button class="f1" type="primary" @click="closeDropdown">保存</u-button> -->
-							<view class="f1 btns sure" @click="closeDropdown">保存</view>
-						</view>
-					</view>
-				</u-dropdown-item>
-				<u-dropdown-item v-model="value1" title="价格" :options="options"></u-dropdown-item>
-				<u-dropdown-item v-model="value2" title="筛选" :options="options">
-					<view class="slot-content" style="background-color: #FFFFFF;">
-						<scroll-view scroll-y="true" style="height: 348rpx;">
-							<view class="filteritems">
-								<view class="cm_title">座位</view>
-								<view class="u-flex carBrandBar">
-									<view class=" carBrand u-flex">
-										<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
-										<view class="grid-text">我的行程</view>
-									</view>
-									<view class=" carBrand u-flex">
-										<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
-										<view class="grid-text">我的行程</view>
-									</view>
-									<view class=" carBrand u-flex">
-										<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
-										<view class="grid-text">我的行程</view>
-									</view>
-									<view class=" carBrand u-flex">
-										<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
-										<view class="grid-text">我的行程</view>
-									</view>
-									<view class="f1"></view>
-								</view>
-							</view>
-							<view class="filteritems">
-								<view class="cm_title">座位</view>
-								<view class="u-flex carBrandBar">
-									<view class=" carBrand u-flex">
-										<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
-										<view class="grid-text">我的行程</view>
-									</view>
-									<view class=" carBrand u-flex">
-										<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
-										<view class="grid-text">我的行程</view>
-									</view>
-									<view class=" carBrand u-flex">
-										<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
-										<view class="grid-text">我的行程</view>
-									</view>
-									<view class=" carBrand u-flex">
-										<!-- <image src="../../../static/images/sy_xc.png" mode="scaleToFill" class="icons" > </image> -->
-										<view class="grid-text">我的行程</view>
-									</view>
-									<view class="f1"></view>
-								</view>
-							</view>
-						</scroll-view>
-						<view class="footer">
-							共<text style="color: #EE7F48;">10</text>车型可选
-						</view>
-						<view class="footer u-flex">
-							<view class="f1 btns">重置</view>
-							<!-- <u-button class="f1" type="primary" @click="closeDropdown">保存</u-button> -->
-							<view class="f1 btns sure" @click="closeDropdown">保存</view>
-						</view>
-					</view>
-				</u-dropdown-item>
-			</u-dropdown>
-		</view>
+		
 		<view class=" carPanel">
 			<CarListItems />
 			<CarListItems />
@@ -165,12 +166,12 @@
 <style lang="scss" scoped>
 	.pages {
 		background-color: #fff;
-		
+		padding-top: 164rpx;
 
 		.header {
 			width: 100%;
-			padding: 20rpx;
-			position: sticky;
+			// padding: 20rpx;
+			position: fixed;
 			left: 0;
 			top: 0;
 			background-color: #fff;
@@ -201,11 +202,11 @@
 
 		.filterBox {
 			width: 100%;
-			position: sticky;
-			left: 0;
-			top: 104rpx;
-			z-index: 2;		
-			background-color: #fff;
+			// position: sticky;
+			// left: 0;
+			// top: 104rpx;
+			// z-index: 2;		
+			// background-color: #fff;
 			.carBrandBar {
 				flex-wrap: wrap;
 				justify-content: space-between;
