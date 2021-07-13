@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/rent/rent",
+    "pages/home/buy/buy"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/features",
+      "pages": [
+        "citySelect/citySelect",
+        "addressSelect/addressSelect",
+        "rentDate/rentDate",
+        "carsSelect/carsSelect",
+        "carDetail/carDetail",
+        "createOder/createOder"
+      ]
+    },
+    {
+      "root": "pages/usedCars",
+      "pages": [
+        "cars/cars"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#EE7F48",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/home/rent/rent",
+        "iconPath": "static/images/sy_wxz.png",
+        "selectedIconPath": "static/images/sy_xz.png",
+        "text": "租车"
+      },
+      {
+        "pagePath": "pages/home/buy/buy",
+        "iconPath": "static/images/zc_wxz.png",
+        "selectedIconPath": "static/images/zc_xz.png",
+        "text": "买车"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

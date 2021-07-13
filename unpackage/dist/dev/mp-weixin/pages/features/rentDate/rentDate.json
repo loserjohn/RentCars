@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "取还时间",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-button": "/uview-ui/components/u-button/u-button",
+    "renting-time": "/components/RentingTime",
+    "time-horizon": "/components/time-horizon/time-horizon"
+  }
+}

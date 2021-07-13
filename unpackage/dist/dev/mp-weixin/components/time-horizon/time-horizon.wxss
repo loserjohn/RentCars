@@ -1,0 +1,142 @@
+
+.flex-row{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-flex-direction: row;
+}
+.align-items-center{
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+view{
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #617683;
+}
+.calendar{
+	width: 750rpx;
+	overflow-x: auto;
+  /* margin-top: 80rpx; */
+  padding-bottom: 280rpx;
+}
+.weeks_con{
+  padding: 0 60rpx;
+}
+.weeks_item{
+  width: 90rpx;
+  text-align: center;
+}
+.month_title{
+  margin-top: 30rpx;
+  text-align: left;
+  /* background-color: #ddd; */
+  padding: 10rpx 30rpx;
+}
+.week_con{
+  margin-top: 50rpx;
+  padding: 0 60rpx;
+}
+.dateCon{
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  margin: 15rpx;
+  position: relative;
+}
+.dateCon view{
+  width: 60rpx;
+  height: 100%;
+  line-height: 60rpx;
+  text-align: center;
+  margin: 0 auto;
+}
+.rangeTip .startRangeTime{
+  width: 75rpx;
+  margin-right: 0;
+  border-radius: 30rpx 0 0 30rpx;
+  background-color: rgba(19, 158, 238, 0.1);
+}
+.rangeTip .startRangeTime view{
+  margin-right: 15rpx;
+}
+.startTime{
+  border-radius: 30rpx;
+  background-color: #4C81FC;
+  color: #fff;
+  position: relative;
+}
+.startTime::before{
+	content: '取车';
+	position: absolute;
+	bottom: -44rpx;
+	color: #333;
+	font-size: 22rpx;
+	width: 100%;
+	text-align: center;
+	left: 0;
+}
+.rangeTip .endRangeTime{
+  width: 75rpx;
+  margin-left: 0;
+  border-radius: 0 30rpx 30rpx 0;
+  background-color: rgba(19, 158, 238, 0.1);
+}
+.rangeTip .endRangeTime view{
+  margin-left: 15rpx;
+}
+.endTime{
+  border-radius: 30rpx;
+  background-color: #4C81FC;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.endTime::before{
+	content: '还车';
+	position: absolute;
+	bottom: -44rpx;
+	color: #333;
+	font-size: 22rpx;
+	left: 0;
+	
+	width: 100%;
+}
+.rangeTip .rangeTime{
+  width: 90rpx;
+  margin: 15rpx 0;
+  background-color: rgba(19, 158, 238, 0.1);
+}
+.today{
+  border-radius: 30rpx;
+  background-color: #dbe626;
+  color: #fff;
+}
+.btn_sure{
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#FE9E1C), to(#FA5C10));
+  background: -webkit-linear-gradient(left, #FE9E1C, #FA5C10);
+  background: linear-gradient(90deg, #FE9E1C, #FA5C10);
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+

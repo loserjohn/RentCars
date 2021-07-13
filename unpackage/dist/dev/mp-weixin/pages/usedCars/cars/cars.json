@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "二手车",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "u-dropdown": "/uview-ui/components/u-dropdown/u-dropdown",
+    "u-dropdown-item": "/uview-ui/components/u-dropdown-item/u-dropdown-item",
+    "car-list-items": "/components/CarListItems"
+  }
+}

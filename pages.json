@@ -1,0 +1,104 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/rent/rent",
+			"style": {
+				"navigationBarTitleText": "租车"
+			}
+		},
+		{
+			"path": "pages/home/buy/buy",
+			"style": {
+				"navigationBarTitleText": "买车"
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "pages/features",
+			"pages": [{
+					"path": "citySelect/citySelect",
+					"style": {
+						"navigationBarTitleText": "城市选择",
+						"enablePullDownRefresh": false
+					}
+
+				},
+				{
+					"path": "addressSelect/addressSelect",
+					"style": {
+						"navigationBarTitleText": "地址选择",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "rentDate/rentDate",
+					"style": {
+						"navigationBarTitleText": "取还时间",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "carsSelect/carsSelect",
+					"style": {
+						"navigationBarTitleText": "车型选择",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "carDetail/carDetail",
+					"style": {
+						"navigationBarTitleText": "车源详情",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "createOder/createOder",
+					"style": {
+						"navigationBarTitleText": "创建订单",
+						"enablePullDownRefresh": false
+					}
+
+				}
+			]
+		},
+		{
+			"root": "pages/usedCars",
+			"pages": [{
+				"path": "cars/cars",
+				"style": {
+					"navigationBarTitleText": "二手车",
+					"enablePullDownRefresh": true
+				}
+
+			}]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#EE7F48",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "pages/home/rent/rent",
+				"iconPath": "static/images/sy_wxz.png",
+				"selectedIconPath": "static/images/sy_xz.png",
+				"text": "租车"
+			},
+			{
+				"pagePath": "pages/home/buy/buy",
+				"iconPath": "static/images/zc_wxz.png",
+				"selectedIconPath": "static/images/zc_xz.png",
+				"text": "买车"
+			}
+		]
+	}
+}

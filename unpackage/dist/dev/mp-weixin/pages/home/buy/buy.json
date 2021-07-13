@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "买车",
+  "usingComponents": {
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "u-swiper": "/uview-ui/components/u-swiper/u-swiper",
+    "u-grid": "/uview-ui/components/u-grid/u-grid",
+    "u-grid-item": "/uview-ui/components/u-grid-item/u-grid-item",
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore",
+    "u-mask": "/uview-ui/components/u-mask/u-mask",
+    "u-top-tips": "/uview-ui/components/u-top-tips/u-top-tips",
+    "u-toast": "/uview-ui/components/u-toast/u-toast"
+  }
+}

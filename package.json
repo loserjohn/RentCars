@@ -1,0 +1,12 @@
+{
+    "id": "time-horizon",
+    "name": "time-horizon",
+    "version": "1.0.0",
+    "description": "日期范围选择组件",
+    "keywords": [
+        "日期范围选择组件",
+        "日期范围选择",
+        "日期范围",
+        "日期组件"
+    ]
+}

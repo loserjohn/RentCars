@@ -1,0 +1,65 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/features/citySelect/citySelect",
+          "pathName": "pages/features/citySelect/citySelect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/features/citySelect/citySelect",
+          "pathName": "pages/features/citySelect/citySelect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "取还时间",
+          "pathName": "pages/features/rentDate/rentDate",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "选车",
+          "pathName": "pages/features/carsSelect/carsSelect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "车源详情",
+          "pathName": "pages/features/carDetail/carDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "创建订单",
+          "pathName": "pages/features/createOder/createOder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "买车",
+          "pathName": "pages/home/buy/buy",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "二手车",
+          "pathName": "pages/usedCars/cars/cars",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
